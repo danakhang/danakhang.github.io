@@ -399,6 +399,198 @@ function buildMap(lat, lon) {
   // ------------
 
   // The world markers
+  function getRandomInRange(from, to, fixed) {
+    return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
+    // .toFixed() returns string, so ' * 1' is a trick to convert to number
+  }
+  //1
+  function randomMarker1() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/1.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Lightning at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker1();
+  //2;
+  function randomMarker2() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/2.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Thunder at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker2();
+  //3
+  function randomMarker3() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/3.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Sleet at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker3();
+  //4
+  function randomMarker4() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/4.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Sunshine at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker4();
+  //5
+  function randomMarker5() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/5.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Clear at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker5();
+  //6
+  function randomMarker6() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/tree.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Tree at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker6();
+  //7
+  function randomMarker7() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/7.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Breeze at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker7();
+  //8
+  function randomMarker8() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+
+      const iconW = L.icon({
+        iconUrl: "img/8.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Hot at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker8();
+  //9
+  function randomMarker9() {
+    for (let i = 0; i < 15; i++) {
+      let x = Math.floor(Math.random() * 10 + 1);
+      var numLa = getRandomInRange(-80, 80, x);
+      var numLo = getRandomInRange(-1080, 1080, x);
+      const iconW = L.icon({
+        iconUrl: "img/9.png",
+        iconSize: [38, 65],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+      let markerW = L.marker([numLa, numLo], { icon: iconW });
+      var popupW = markerW
+        .bindPopup("Cold at " + markerW.getLatLng())
+        .openPopup();
+      popupW.addTo(mymap);
+    }
+  }
+  randomMarker9();
 
   //Layer controller
   var baseMaps = {
